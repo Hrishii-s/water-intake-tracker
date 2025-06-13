@@ -118,10 +118,6 @@ function handleClear(){
     setSelectedDate2("")
     setQuantityDiff(null)
 }
-
-
-
-
     return(
 
         <div>
@@ -134,11 +130,8 @@ function handleClear(){
                 <div class="col-auto"><button type="submit" className="btn btn-success">Add</button></div>
             </form>
 
-
-
             <table className=" table  table-bordered  text-center">
             <thead className="table-success ">
-
                 <tr> 
                     <th>ID</th>
                     <th>Date</th>
@@ -151,7 +144,7 @@ function handleClear(){
                 <tr key={list.id}>
                         <td>{list.id}</td>
                         <td>{list.date}</td>
-
+                        
                         {editingItemId===list.id?(
 
                         <input type="text"  value={editedQuantity} onChange={(e)=>setEditedQuantity(e.target.value)}></input>

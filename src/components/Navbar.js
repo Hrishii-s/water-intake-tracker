@@ -24,10 +24,6 @@ function Navbar(){
       
 
   }
-
-
-
-
     return(
         <div>
         <nav className="navbar navbar-expand-lg py-3" style={{backgroundColor:' #e3f2fd'}}>
@@ -49,10 +45,6 @@ function Navbar(){
       <li className="nav-item"> <NavLink className="nav-link" to="/login/" activeClassName="active" aria-current="page">Login</NavLink></li>
     )
         }
-          
-      
-
-
 
 
         </ul>

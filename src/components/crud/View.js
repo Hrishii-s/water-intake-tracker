@@ -32,6 +32,7 @@ function View(){
         const storedList=window.localStorage.getItem("listing_"+user.email)
         if(storedList){
             setListing(JSON.parse(storedList))
+            
         }}
 
     },[user])
@@ -144,7 +145,7 @@ function handleClear(){
                 <tr key={list.id}>
                         <td>{list.id}</td>
                         <td>{list.date}</td>
-                        
+
                         {editingItemId===list.id?(
 
                         <input type="text"  value={editedQuantity} onChange={(e)=>setEditedQuantity(e.target.value)}></input>
